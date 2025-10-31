@@ -1,0 +1,338 @@
+/* RESET E TIPOGRAFIA */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundo Escuro (Tema de Jogo) */
+    color: #f0f0f0; /* Texto Claro */
+}
+
+/* 1. HEADER E NAVEGAÇÃO */
+header {
+    background-color: #1f1f1f;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3a3a3a;
+    
+    /* --- ESTILOS PARA IMAGEM DE FUNDO DO LOGO --- */
+    background-image: url('logo_infinity.png'); /* <-- VERIFIQUE O NOME DO ARQUIVO */
+    background-repeat: no-repeat;
+    background-position: center center; 
+    min-height: 80px; /* Garante que o cabeçalho seja visível */
+}
+
+.logo {
+    z-index: 10;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4CAF50; /* Verde Destaque Minecraft */
+    padding-left: 10px;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* 2. SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('minecraft_background.jpg') no-repeat center center/cover; /* Substitua a imagem de fundo */
+    text-align: center;
+    padding: 100px 5%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #FFEB3B; /* Amarelo Vibrante */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #388E3C;
+}
+
+/* 3. SEÇÃO DE PRODUTOS/RANKS */
+.product-section {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.product-section h2 {
+    color: #4CAF50;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #1f1f1f;
+    border: 3px solid #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #4CAF50;
+}
+
+.product-card h3 {
+    color: #FFEB3B;
+    text-align: center;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.price {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: #FF5722;
+    margin: 10px 0 15px 0;
+}
+
+.product-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.product-card ul li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #3a3a3a;
+    font-size: 0.95em;
+}
+
+/* ESTILOS TEMÁTICOS DOS RANKS (BLEACH) */
+
+/* Shinigami */
+.shinigami {
+    border-color: #A52A2A; 
+}
+
+/* Arrankar */
+.arrankar {
+    border-color: #00BCD4;
+}
+
+/* Rei Quincy */
+.rei-quincy {
+    border-color: #6495ED; 
+    background-color: #2a2a2a;
+}
+.rei-quincy h3 {
+    color: #6495ED;
+}
+.rei-quincy .price {
+    color: #FF5722;
+}
+
+
+/* DESTAQUE DO RANK SUPREMO */
+.supremo {
+    border-color: #FFD700; /* Borda Dourada */
+    background-color: #363636;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+}
+
+.supremo h3 {
+    color: #FFD700;
+}
+
+.supremo-btn {
+    background-color: #FFD700 !important;
+    color: #121212 !important;
+}
+
+.supremo-btn:hover {
+    background-color: #e6c200 !important;
+}
+
+/* FAIXA "DESTAQUE" */
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E91E63;
+    color: white;
+    padding: 5px 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 0 10px 0 10px;
+}
+
+
+/* 4. SEÇÃO KITS E ITENS */
+.kits-section {
+    background-color: #1f1f1f;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.kits-section h2 {
+    color: #FFEB3B;
+    margin-bottom: 30px;
+}
+
+.kit-item {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kit-item h4 {
+    margin: 0;
+    color: #f0f0f0;
+    font-size: 1.2em;
+}
+
+.kit-item p {
+    flex-grow: 1;
+    margin: 0 20px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.kit-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4CAF50;
+    min-width: 80px;
+    text-align: right;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85em;
+    border-top: 2px solid #3a3a3a;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* -------------------------------------- */
+/* ESTILOS PARA FORMULÁRIO DE PAGAMENTO */
+/* -------------------------------------- */
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #3a3a3a;
+}
+
+.checkout-form input {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.checkout-form input::placeholder {
+    color: #b0b0b0;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #388E3C;
+}
+
+/* MEDIA QUERIES para responsividade mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        min-height: 120px; /* Aumenta o header para caber o logo e a navegação em coluna */
+    }
+    nav a {
+        margin: 10px 15px;
+    }
+    .hero h1 {
+        font-size: 2em;
+    }
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 90%;
+    }
+    .kit-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    .kit-item p {
+        margin: 5px 0 10px 0;
+    }
+    .kit-price {
+        align-self: flex-end;
+    }
+}
