@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Infinity Network - Servidor Minecraft</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">INFINITY NETWORK</div>
+        <nav>
+            <a href="#ranks">Ranks VIP</a>
+            <a href="#kits">Kits & Itens</a>
+            <a href="#contato">Suporte</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Seu Jogo, Sem Limites.</h1>
+        <p>Desbloqueie vantagens exclusivas, cosméticos épicos e o poder total no nosso servidor.</p>
+        <a href="#ranks" class="cta-button">EXPLORAR RANKS VIP</a>
+    </section>
+
+    <section id="ranks" class="product-section">
+        <h2>⚔️ Escolha Seu VIP</h2>
+        
+        <div class="product-grid">
+            
+            <div class="product-card shinigami">
+                <h3>VIP SHINIGAMI</h3>
+                <span class="price">R$ 39,90</span>
+                
+                <form class="checkout-form" action="[URL_DO_GATEWAY_SHINIGAMI]" method="POST">
+                    <ul>
+                        <li>Acesso a comandos básicos de administração</li>
+                        <li>Kit diário de almas (itens de restauração)</li>
+                        <li>Tag "Shinigami" exclusiva no chat</li>
+                        <li>Sem cooldown no comando /home</li>
+                    </ul>
+                    <input type="text" name="player_tag" placeholder="Seu Nickname no Jogo" required>
+                    <input type="email" name="player_email" placeholder="Seu Melhor E-mail" required>
+                    <input type="hidden" name="product_id" value="vip_shinigami_3990">
+                    <button type="submit" class="buy-button">PAGAR R$ 39,90</button>
+                </form>
+            </div>
+            
+            <div class="product-card arrankar">
+                <h3>VIP ARRANKAR</h3>
+                <span class="price">R$ 69,90</span>
+                
+                <form class="checkout-form" action="[URL_DO_GATEWAY_ARRANKAR]" method="POST">
+                    <ul>
+                        <li>Todos os benefícios Shinigami</li>
+                        <li>Acesso ao mundo exclusivo "Hueco Mundo"</li>
+                        <li>Kit semanal de máscaras (cosméticos de cabeça)</li>
+                        <li>Habilidade de voo temporário (/fly 1 hora/dia)</li>
+                    </ul>
+                    <input type="text" name="player_tag" placeholder="Seu Nickname no Jogo" required>
+                    <input type="email" name="player_email" placeholder="Seu Melhor E-mail" required>
+                    <input type="hidden" name="product_id" value="vip_arrankar_6990">
+                    <button type="submit" class="buy-button">PAGAR R$ 69,90</button>
+                </form>
+            </div>
+            
+            <div class="product-card rei-quincy">
+                <h3>VIP REI QUINCY</h3>
+                <span class="price">R$ 129,90</span>
+                
+                <form class="checkout-form" action="[URL_DO_GATEWAY_QUINCY]" method="POST">
+                    <ul>
+                        <li>Todos os benefícios anteriores</li>
+                        <li><strong style="color: #6495ED;">Kit Mensal "Flecha de Reishi"</strong> (Itens de defesa raros)</li>
+                        <li>Acesso à área VIP de *farming* (recursos acelerados)</li>
+                        <li>Pet lendário exclusivo do Rank</li>
+                    </ul>
+                    <input type="text" name="player_tag" placeholder="Seu Nickname no Jogo" required>
+                    <input type="email" name="player_email" placeholder="Seu Melhor E-mail" required>
+                    <input type="hidden" name="product_id" value="vip_rei_quincy_12990">
+                    <button type="submit" class="buy-button">PAGAR R$ 129,90</button>
+                </form>
+            </div>
+
+            <div class="product-card supremo">
+                <span class="ribbon">MÁXIMA VANTAGEM!</span>
+                <h3>RANK SUPREMO</h3>
+                <span class="price">R$ 199,90</span> 
+                
+                <form class="checkout-form" action="[URL_DO_GATEWAY_SUPREMO]" method="POST">
+                    <ul>
+                        <li>Todos os benefícios anteriores (incluindo o Rei Quincy)</li>
+                        <li><strong style="color: #ffcc00;">PRIORIDADE MÁXIMA de Login ABSOLUTA</strong></li>
+                        <li>Título customizado no chat</li>
+                        <li>Acesso ao Servidor de Testes Beta</li>
+                        <li>Suporte Discord Dedicado 24h</li>
+                    </ul>
+                    <input type="text" name="player_tag" placeholder="Seu Nickname no Jogo" required>
+                    <input type="email" name="player_email" placeholder="Seu Melhor E-mail" required>
+                    <input type="hidden" name="product_id" value="supremo_rank_19990">
+                    <button type="submit" class="buy-button supremo-btn">PAGAR R$ 199,90</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="kits" class="kits-section">
+        <h2>🛠️ Kits e Outros Itens</h2>
+        <div class="kit-item">
+            <h4>Kit Sobrevivência Avançado</h4>
+            <span class="kit-price">R$ 15,00</span>
+            <p>Armadura de Diamante encantada nível I. Uma compra única para te dar vantagem.</p>
+        </div>
+        <div class="kit-item">
+            <h4>Chave Mágica para Loot Box</h4>
+            <span class="kit-price">R$ 5,00 (cada)</span>
+            <p>Garanta itens aleatórios, raros e super raros, incluindo cosméticos de temporada.</p>
+        </div>
+    </section>
+
+
+    <footer id="contato">
+        <p>© 2024 Infinity Network. Todos os direitos reservados.</p>
+        <p>Precisa de ajuda? Entre em contato: <a href="mailto:suporte@infinitynetwork.com.br">suporte@infinitynetwork.com.br</a></p>
+        <p>Termos de Serviço | Política de Privacidade</p>
+    </footer>
+
+</body>
+</html>
